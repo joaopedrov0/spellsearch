@@ -1,0 +1,96 @@
+body{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+
+    font-family: "Zen Antique";
+    background-image: url('escrita.jpg');
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Caveat';
+    text-align: center;
+
+    font-size: 48px;
+}
+
+nav{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw;
+}
+
+nav > * {
+    width: 30%;
+    height: 50px;
+}
+
+button{
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.800);
+}
+select{
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.800);
+}
+
+.wrap{
+    width: 95vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ficha{
+    width: 45%;
+    margin: 5px;
+    padding: 15px;
+    box-shadow: 0px 0px 30px rgba(97, 97, 97, 0.337);
+    height: max-content;
+
+    background-color: #fff;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ul{
+    list-style-type: armenian;
+}
+
+.credits{
+    position: absolute;
+    align-self: center top;
+    font-family: "Caveat";
+    font-size: 24px;
+}
+.credits a{
+    text-decoration: none;
+    color: brown;
+}
+
+@media screen and (max-width: 500px){
+    nav > *{
+        width: 40%;
+    }
+    .ficha{
+        width: 90%;
+    }
+}
