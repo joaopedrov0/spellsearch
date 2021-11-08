@@ -11,12 +11,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Zen+Antique&display=swap" rel="stylesheet">
 
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="modal">
+        <div class="title-modal runic">
+            <span style="--i:1">S</span>
+            <span style="--i:2">p</span>
+            <span style="--i:3">e</span>
+            <span style="--i:4">l</span>
+            <span style="--i:5">l</span>
+            <span style="--i:6">S</span>
+            <span style="--i:7">e</span>
+            <span style="--i:8">a</span>
+            <span style="--i:9">r</span>
+            <span style="--i:10">c</span>
+            <span style="--i:11">h</span>
+        </div>
+    </div>
     <div class="credits">Imagem de <a href="https://pixabay.com/pt/users/nile-598962/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=623167">Nile</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=623167">Pixabay</a></div>
     <div class="wrap">
         <h1>SpellSearch</h1>
+        <div class="filter">
+            <select name="classes" id="classes">
+                <option value="" disabled selected>Classe</option>
+                <option value="">Todos</option>
+                <option value="bard">Bard</option>
+                <option value="cleric">Cleric</option>
+                <option value="druid">Druid</option>
+                <option value="monk">Monk</option>
+                <option value="paladin">Paladin</option>
+                <option value="ranger">Ranger</option>
+                <option value="sorcerer">Sorcerer</option>
+                <option value="warlock">Warlock</option>
+                <option value="wizard">Wizard</option>
+            </select>
+            <select name="level" id="levels">
+                <option value="" disabled selected>Nível</option>
+                <option value="">Todos</option>
+                <option value="0" >Cantrip</option>
+                <option value="1" >1</option>
+                <option value="2" >2</option>
+                <option value="3" >3</option>
+                <option value="4" >4</option>
+                <option value="5" >5</option>
+                <option value="6" >6</option>
+                <option value="7" >7</option>
+                <option value="8" >8</option>
+                <option value="9" >9</option>
+            </select>
+            <input type="button" name="add" onclick="renderFilter()" value="Aplicar filtro">
+        </div>
         <nav>
             <select name="spell" id="spell">
                 <option value="null" disabled selected>Selecionar</option>
@@ -27,6 +73,6 @@
             
         </section>
     </div>
-    <script src="script.js"></script>
+    <script src="newScript.js"></script>
 </body>
 </html>
