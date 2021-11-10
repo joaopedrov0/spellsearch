@@ -16,7 +16,7 @@ body{
     background-image: url('escrita.jpg');
     background-position: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;
 }
 
 .runic{
@@ -100,7 +100,7 @@ select{
 
 section{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-evenly;
 }
 
