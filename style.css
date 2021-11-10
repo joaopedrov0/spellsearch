@@ -14,9 +14,9 @@ body{
 
     font-family: "Zen Antique";
     background-image: url('escrita.jpg');
-    background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .runic{
