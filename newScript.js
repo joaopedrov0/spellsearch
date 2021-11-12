@@ -84,7 +84,7 @@ function gerarFicha(){
             }
         }
 
-        container.innerHTML += `
+        container.innerHTML = `
         <div class="ficha">
                 <h2 id="spellName">${spell.name}</h2>
                 <small id="level">Spell ${spell.level} level of ${spell.school.name}</small>
@@ -102,7 +102,7 @@ function gerarFicha(){
                 <small id="higher_level">${spell.higher_level}</small>
                 ${damageArea}
             </div>
-        `
+        ` + container.innerHTML
     }
 }
 
