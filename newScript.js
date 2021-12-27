@@ -8,7 +8,8 @@ setTimeout(() => {
 let renderOptions = () => {
 
     let options = document.querySelector('#spell')
-
+    
+    options.innerHTML = '<option value="null" disabled selected>Selecionar</option>'
 
     for(let i = 0; i < spells.length; i++){
         options.innerHTML += `<option value="${spells[i].index}">${spells[i].name}</option>`
