@@ -15,6 +15,6 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [ ] Melhorar a interface
 
-## ☕ Usando <nome_do_projeto>
+## ☕ Usando SpellSearch
 
 Para usar SpellSearch, clique [aqui!](https://joaopedrov0.github.io/spellsearch/)
